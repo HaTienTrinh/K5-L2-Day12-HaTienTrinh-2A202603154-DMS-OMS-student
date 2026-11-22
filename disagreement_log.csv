@@ -1,0 +1,100 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,person,seatbelt,khác giá trị (IoU=0.60),worn_correct,unknown,mine,4.7 (seatbelt),giữ nguyên worn_correct: thấy dải dây chéo từ vai xuống hông
+D01.png,face,gaze_zone,khác giá trị (IoU=0.53),other,lap,peer,4.5 (gaze_zone),sửa gaze_zone thành lap: tài xế cúi đầu nhìn xuống đùi
+D01.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D01.png,face13,count,khác số skeleton,1,0,mine,4.6,giữ nguyên: mặt rộng ≥ 60 px phải có face13; điểm không thấy đánh cờ outside
+D02.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.07,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D02.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D02.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D03.png,face,eye_left,khác giá trị (IoU=0.77),open,unknown,mine,"4.5 (eye, glasses, gaze_zone)","giữ nguyên: eye_left=open, glasses=none, gaze_zone=other"
+D03.png,face,gaze_zone,khác giá trị (IoU=0.77),other,center,mine,"4.5 (eye, glasses, gaze_zone)","giữ nguyên: eye_left=open, glasses=none, gaze_zone=other"
+D03.png,face,glasses,khác giá trị (IoU=0.77),none,clear,mine,"4.5 (eye, glasses, gaze_zone)","giữ nguyên: eye_left=open, glasses=none, gaze_zone=other"
+D03.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.26,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D03.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D03.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D03.png,face13,count,khác số skeleton,1,0,mine,4.6,giữ nguyên: mặt rộng ≥ 60 px phải có face13; điểm không thấy đánh cờ outside
+D04.png,face,eye_right,khác giá trị (IoU=0.81),open,unknown,mine,"4.5 (eye, gaze_zone)","giữ nguyên: eye_right=open, gaze_zone=road"
+D04.png,face,gaze_zone,khác giá trị (IoU=0.81),road,other,mine,"4.5 (eye, gaze_zone)","giữ nguyên: eye_right=open, gaze_zone=road"
+D04.png,phone,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.30,,mine,4.7 (phone: ôm cả máy kể cả phần ngón tay che),giữ nguyên box phone của mình
+D04.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.7 (phone: ôm cả máy kể cả phần ngón tay che),giữ nguyên box phone của mình
+D04.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D04.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,4.6 (cờ điểm mặt),giữ nguyên: mắt phải thấy rõ (eye_right=open) nên các điểm không cần cờ occluded
+D04.png,face13,right_eye_inner.occluded,khác cờ,0,1,mine,4.6 (cờ điểm mặt),giữ nguyên: mắt phải thấy rõ (eye_right=open) nên các điểm không cần cờ occluded
+D04.png,face13,right_eye_upper.occluded,khác cờ,0,1,mine,4.6 (cờ điểm mặt),giữ nguyên: mắt phải thấy rõ (eye_right=open) nên các điểm không cần cờ occluded
+D04.png,face13,right_eye_lower.occluded,khác cờ,0,1,mine,4.6 (cờ điểm mặt),giữ nguyên: mắt phải thấy rõ (eye_right=open) nên các điểm không cần cờ occluded
+D05.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.49,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D05.png,face,gaze_zone,khác giá trị (IoU=0.78),center,lap,mine,4.5 (gaze_zone),giữ nguyên gaze_zone=center
+D05.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1 (hand: đầu ngón đến cổ tay); 4.4-5,giữ nguyên box tay của mình: ôm sát bàn tay thấy được
+D05.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D05.png,face13,right_eye_outer.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_outer.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_inner.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_inner.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_upper.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_upper.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_lower.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,right_eye_lower.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,mouth_right.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D05.png,face13,mouth_right.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D06.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2,giữ nguyên: DMS không vẽ object (không gán vật ngoài tay tài xế)
+D06.png,face13,nose_tip.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,nose_tip.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,mouth_left.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,mouth_left.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,mouth_right.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,mouth_right.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,lip_upper.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,lip_upper.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,lip_lower.occluded,khác cờ,0,1,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+D06.png,face13,lip_lower.outside,khác cờ,1,0,mine,"4.6 (occluded nếu đoán chắc vị trí, outside nếu không)",giữ nguyên outside: không đoán chắc được vị trí điểm bị che
+S01_ir.png,child_seat,seat,khác giá trị (IoU=0.92),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S01_ir.png,face,eye_left,khác giá trị (IoU=0.70),open,unknown,peer,4.1 (OMS: face chỉ box),"sửa: đưa thuộc tính face ở S01 về mặc định (eye_left/eye_right/glasses unknown, gaze_zone other)"
+S01_ir.png,person,seat,khác giá trị (IoU=0.98),rear_left,rear_right,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S01_rgb.png,child_seat,seat,khác giá trị (IoU=0.93),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S01_rgb.png,person,seat,khác giá trị (IoU=0.97),rear_left,rear_right,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S01_rgb.png,face,eye_left,khác giá trị (IoU=0.66),open,unknown,peer,4.1 (OMS: face chỉ box),"sửa: đưa thuộc tính face ở S01 về mặc định (eye_left/eye_right/glasses unknown, gaze_zone other)"
+S02_ir.png,infant_seat,seat,khác giá trị (IoU=0.75),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S02_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S02_rgb.png,infant_seat,seat,khác giá trị (IoU=0.75),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S02_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S02_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S03_ir.png,object,seat,khác giá trị (IoU=0.84),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S03_ir.png,child_seat,seat,khác giá trị (IoU=0.93),rear_left,rear_right,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S03_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S03_rgb.png,object,seat,khác giá trị (IoU=0.83),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S03_rgb.png,child_seat,seat,khác giá trị (IoU=0.93),rear_left,rear_right,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S03_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S04_ir.png,face,eye_left,khác giá trị (IoU=0.69),unknown,open,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S04_ir.png,face,eye_right,khác giá trị (IoU=0.69),unknown,open,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S04_ir.png,face,glasses,khác giá trị (IoU=0.69),unknown,none,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S04_ir.png,person,seat,khác giá trị (IoU=0.82),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S04_rgb.png,person,seat,khác giá trị (IoU=0.80),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S04_rgb.png,face,eye_left,khác giá trị (IoU=0.67),unknown,open,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S04_rgb.png,face,eye_right,khác giá trị (IoU=0.67),unknown,open,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S04_rgb.png,face,glasses,khác giá trị (IoU=0.67),unknown,none,mine,4.1 (OMS: face chỉ box),"giữ nguyên: OMS chỉ vẽ box face, để thuộc tính mặc định"
+S05_ir.png,infant_seat,seat,khác giá trị (IoU=0.94),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S05_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S05_ir.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2; 4.4-1 (không thấy thì không vẽ),giữ nguyên: không vẽ object ở vị trí này
+S05_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S05_rgb.png,infant_seat,seat,khác giá trị (IoU=0.94),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S05_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S05_rgb.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.2; 4.4-1 (không thấy thì không vẽ),giữ nguyên: không vẽ object ở vị trí này
+S05_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S06_ir.png,infant_seat,facing,khác giá trị (IoU=0.62),rear,front,mine,4.8; 4.1 (infant_seat.facing),giữ nguyên facing=rear
+S06_ir.png,infant_seat,seat,khác giá trị (IoU=0.62),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S06_rgb.png,infant_seat,facing,khác giá trị (IoU=0.62),rear,front,mine,4.8; 4.1 (infant_seat.facing),giữ nguyên facing=rear
+S06_rgb.png,infant_seat,seat,khác giá trị (IoU=0.62),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S07_ir.png,infant_seat,seat,khác giá trị (IoU=0.97),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S07_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S07_rgb.png,infant_seat,seat,khác giá trị (IoU=0.98),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S07_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,GUIDE §3; coach cập nhật occupied=yes,giữ nguyên: trẻ trong ghế trẻ em / nôi không vẽ person hay face
+S08_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.1; 4.8 (infant_seat: ghế em bé dạng nôi xách),"giữ nguyên: ghế bên phải ảnh là infant_seat, không phải child_seat"
+S08_ir.png,child_seat,seat,khác giá trị (IoU=0.94),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S08_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1; 4.8 (infant_seat: ghế em bé dạng nôi xách),"giữ nguyên: ghế bên phải ảnh là infant_seat, không phải child_seat"
+S08_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.1; 4.8 (infant_seat: ghế em bé dạng nôi xách),"giữ nguyên: ghế bên phải ảnh là infant_seat, không phải child_seat"
+S08_rgb.png,child_seat,seat,khác giá trị (IoU=0.95),rear_right,rear_left,mine,4.4-3; 4.8,"giữ nguyên: ghế gọi theo xe, camera OMS nhìn về sau nên trái ảnh là rear_right, phải ảnh là rear_left"
+S08_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1; 4.8 (infant_seat: ghế em bé dạng nôi xách),"giữ nguyên: ghế bên phải ảnh là infant_seat, không phải child_seat"

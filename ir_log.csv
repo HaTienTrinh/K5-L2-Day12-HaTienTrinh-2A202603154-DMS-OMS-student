@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Cốc nhỏ ở rear_middle (box khoảng 43x50 px) không còn màu để tách khỏi nền ghế, chỉ nhận được qua hình dạng",object.type,"giữ type=cup như bản RGB vì hình dạng vẫn nhận ra; không chắc thì ghi other (GUIDE 4.4-4)"
+S03_ir,IR_sim,"Túi ở rear_right trên IR-sim chỉ còn độ sáng, mất màu; loại vật nhận bằng hình dạng quai và thân túi",object.type,"giữ type=bag như bản RGB; không đoán loại từ độ sáng"
+S03_ir,IR_sim,"Ghế trẻ em rear_left: phải nhìn rõ được lòng ghế trên chính ảnh IR-sim mới ghi trống, không mượn kết luận từ ảnh RGB",child_seat.occupied,"occupied=no vì lòng ghế vẫn thấy rõ trống trên IR-sim; nếu tối không thấy thì phải ghi unknown"
+D01,real_IR,"Tài xế cúi đầu nhìn xuống đùi: không thấy khe mắt ở cả hai mắt",face.eye_left; face.eye_right; face13 (8 điểm mắt); face.gaze_zone,"eye_left/eye_right=unknown, 8 điểm mắt cờ outside; gaze_zone=lap theo hướng đầu"
+D04,real_IR,"Tay phải cầm điện thoại áp gần tai, che khóe miệng phải; điện thoại nhận bằng hình dạng cạnh máy, không dựa vào màn hình sáng",phone.state; face13.mouth_right,"vẽ phone state=held; mouth_right cờ occluded vì đoán chắc được vị trí"
+D06,real_IR,"Tay trái che phần dưới mặt tài xế (mũi, miệng)",face13 (nose_tip; mouth_left; mouth_right; lip_upper; lip_lower),"5 điểm cờ outside vì không đoán chắc vị trí; không vẽ vật trên tay (DMS không vẽ object)"
